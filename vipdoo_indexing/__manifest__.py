@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Vipdoo - Indexing',
+    'version': '16.0',
+    "summary": "Vipdoo - Indexing",
+    "sequence": 100,
+    'description': """ Provide Sequence For Each Customers And Vendors And You Can Configure The Start Index From The Settings Also We Add It In Sales And Invoice Modules As A Reference""",
+    'category': 'Contacts',
+    'author': 'Vipdoo',
+    'maintainer': 'Vipdoo',
+    'website': 'https://vipdoo.com/',
+    'license': 'LGPL-3',
+    'depends': ['base', 'account', 'contacts', 'sale'],
+    'data': [
+        'views/res_partner_views.xml',
+        'views/account_move.xml',
+        'views/sale_order.xml',
+        'data/ir_sequence_data.xml',
+    ],
+    'demo': [],
+    'qweb': [],
+    'images': ['static/description/icon.jpeg'],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
